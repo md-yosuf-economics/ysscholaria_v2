@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sign In or Sign Up | YS Scholaria</title>
+<meta name="description" content="Sign in or create a YS Scholaria account to track your orders and payments.">
+<meta name="theme-color" content="#0B2D50">
+<link rel="canonical" href="https://ysscholaria.com/login.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="YS Scholaria"><meta property="og:title" content="Sign In or Sign Up | YS Scholaria"><meta property="og:description" content="Sign in or create a YS Scholaria account to track your orders and payments."><meta property="og:url" content="https://ysscholaria.com/login.html"><meta property="og:image" content="https://ysscholaria.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Sign In or Sign Up | YS Scholaria"><meta name="twitter:description" content="Sign in or create a YS Scholaria account to track your orders and payments."><meta name="twitter:image" content="https://ysscholaria.com/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="apple-mobile-web-app-title" content="YS Scholaria">
+<meta name="robots" content="noindex,nofollow">
+<style>/* YS Scholaria - corporate theme */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.lock,html.lock body{overflow:hidden}
+body{margin:0;font:400 16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1B2A3F;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:#1F6FD1;text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0 0 .5em;line-height:1.2;color:#0B2D50;letter-spacing:-.015em}
+h1{font-size:clamp(32px,4.2vw,50px);font-weight:800}
+h2{font-size:clamp(25px,3vw,34px);font-weight:750}
+h3{font-size:18px;font-weight:700}
+h4{font-size:15px;font-weight:700}
+p{margin:0 0 1em}
+ul,ol{margin:0;padding:0}
+:focus-visible{outline:3px solid #7FB6F5;outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:12px;z-index:200;background:#fff;padding:8px 12px;border-radius:6px}
+.wrap{width:min(1200px,calc(100% - 40px));margin:0 auto}
+.section{padding:72px 0}
+.section.alt{background:#F5F8FC}
+.section.dark{background:#0B2D50;color:#D9E6F5}
+.section.dark h2,.section.dark h3{color:#fff}
+.sec-head{max-width:720px;margin:0 0 36px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.row{max-width:none;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.eyebrow{display:inline-block;font:700 12px/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#1F6FD1;margin-bottom:12px}
+.lead{font-size:17px;color:#5A6B82;margin:0}
+.muted{color:#5A6B82}
+.small{font-size:13.5px}
+.text-center{text-align:center}
+.mt{margin-top:28px}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g5{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1024px){.g4,.g5{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:820px){.g2,.g3,.g4,.g5{grid-template-columns:repeat(2,1fr)}.section{padding:56px 0}}
+@media(max-width:560px){.g2,.g3,.g4,.g5{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:24px;box-shadow:0 1px 2px rgba(11,45,80,.04)}
+.card.flat{box-shadow:none}
+.tag{display:inline-block;background:#EAF2FB;color:#1859AD;border-radius:6px;padding:4px 10px;font:600 12px/1.4 Inter,sans-serif}
+.badge-free{display:inline-block;background:#0E8A5F;color:#fff;border-radius:99px;padding:4px 12px;font:700 12px/1.4 Inter,sans-serif;letter-spacing:.04em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:8px;border:1px solid transparent;font:600 15px/1 Inter,sans-serif;cursor:pointer;text-decoration:none;transition:background .15s,border-color .15s,color .15s;white-space:nowrap}
+.btn:hover{text-decoration:none}
+.btn .i{width:18px;height:18px}
+.btn-primary{background:#1F6FD1;color:#fff}
+.btn-primary:hover{background:#1859AD;color:#fff}
+.btn-outline{background:#fff;color:#0B2D50;border-color:#C5D3E4}
+.btn-outline:hover{border-color:#0B2D50;background:#F7FAFD;color:#0B2D50}
+.btn-light{background:#fff;color:#0B2D50}
+.btn-light:hover{background:#EAF2FB;color:#0B2D50}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);color:#fff}
+.btn-wa{background:#128C5B;color:#fff}
+.btn-wa:hover{background:#0E7249;color:#fff}
+.btn-sm{min-height:38px;padding:0 14px;font-size:14px}
+.btn-block{width:100%}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.icon-badge{width:44px;height:44px;border-radius:10px;background:#EAF2FB;color:#0B2D50;display:grid;place-items:center;flex:none}
+.icon-badge .i{width:22px;height:22px}
+/* announcement, utility bar, header */
+.annc{background:linear-gradient(90deg,#0B2D50,#1F6FD1);color:#fff;font-size:14px}
+.annc .wrap{display:flex;align-items:center;justify-content:center;gap:12px 16px;flex-wrap:wrap;padding:10px 0;text-align:center}
+.annc a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.annc .new{background:#fff;color:#0B2D50;border-radius:99px;padding:3px 10px;font:800 11px/1.4 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.util{background:#082340;color:#C9D8EA;font-size:13px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px 20px;min-height:40px;flex-wrap:wrap;padding:6px 0}
+.util a{color:#E6EEF8}
+.util a:hover{color:#fff;text-decoration:none}
+.util .info{display:flex;gap:6px 20px;align-items:center;flex-wrap:wrap}
+.util .info span,.util .info a{display:inline-flex;align-items:center}
+.util .i{width:15px;height:15px;color:#8CC4FF;margin-right:6px}
+.util .quick{display:flex;gap:18px;align-items:center}
+.util .quick a{font-weight:600}
+.hdr{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #E2E8F0;box-shadow:0 1px 0 rgba(11,45,80,.04)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}
+.brand{display:flex;align-items:center;gap:12px;color:#0B2D50;text-decoration:none;min-width:0}
+.brand:hover{text-decoration:none}
+.brand img{height:50px;width:50px;flex:none}
+.brand b{display:block;font:800 22px/1.05 Inter,sans-serif;letter-spacing:-.02em;color:#0B2D50}
+.brand small{display:block;font:700 10.5px/1 Inter,sans-serif;color:#1F6FD1;letter-spacing:.14em;margin-top:5px}
+.nav{display:flex;align-items:center;gap:2px}
+.nav>a,.nav>.dd>button{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;border-radius:8px;color:#243247;font:600 14.5px Inter,sans-serif;background:none;border:0;cursor:pointer;text-decoration:none;white-space:nowrap}
+.nav>a:hover,.nav>.dd>button:hover,.nav>a[aria-current=page]{color:#1F6FD1;background:#F5F8FC;text-decoration:none}
+.nav .i{width:16px;height:16px}
+.dd{position:relative}
+.mega{display:none;position:absolute;top:100%;left:-160px;width:min(780px,92vw);background:#fff;border:1px solid #E2E8F0;border-radius:12px;box-shadow:0 18px 40px rgba(11,45,80,.14);padding:18px 20px;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:6px}
+.dd:hover .mega,.dd.open .mega,.dd:focus-within .mega{display:grid}
+.mega h4{font:700 11px/1.4 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#1F6FD1;margin:0 0 6px}
+.mega a{display:block;padding:7px 10px;border-radius:8px;color:#243247;font-size:14px;text-decoration:none}
+.mega a:hover{background:#F5F8FC;color:#1F6FD1}
+.mega .all{grid-column:1/-1;border-top:1px solid #E2E8F0;margin-top:6px;padding-top:12px;text-align:right;font-weight:700;color:#1F6FD1}
+.hdr-right{display:flex;align-items:center;gap:12px}
+.burger{display:none;width:46px;height:46px;border:1px solid #D5DEEA;background:#fff;border-radius:10px;cursor:pointer;color:#0B2D50;align-items:center;justify-content:center;padding:0}
+.drawer{display:none}
+@media(max-width:1199px){
+ .nav{display:none}
+ .burger{display:inline-flex}
+ .btn-cta{display:none}
+ .drawer{display:block;position:fixed;inset:0;z-index:90;visibility:hidden}
+ .drawer.open{visibility:visible}
+ .drawer .scrim{position:absolute;inset:0;background:rgba(8,35,64,.55);opacity:0;transition:opacity .25s}
+ .drawer.open .scrim{opacity:1}
+ .drawer .panel{position:absolute;top:0;right:0;bottom:0;width:min(88vw,360px);background:#fff;transform:translateX(105%);transition:transform .28s;overflow-y:auto;padding:0 16px 24px;display:flex;flex-direction:column}
+ .drawer.open .panel{transform:none}
+ .drawer .head{display:flex;justify-content:space-between;align-items:center;min-height:78px;border-bottom:1px solid #E2E8F0;margin-bottom:8px}
+ .drawer .brand-mini{font:800 19px Inter,sans-serif;color:#0B2D50}
+ .drawer a{display:flex;align-items:center;min-height:50px;padding:0 10px;border-radius:10px;color:#243247;font:600 16px Inter,sans-serif;text-decoration:none}
+ .drawer a:hover{background:#F5F8FC}
+ .drawer .sub a{min-height:42px;font-weight:500;font-size:15px;padding-left:22px}
+ .drawer .grp{font:700 11px/1.4 Inter,sans-serif;text-transform:uppercase;letter-spacing:.1em;color:#1F6FD1;padding:14px 10px 4px}
+ .drawer .cta{margin-top:16px;display:grid;gap:10px}
+ .drawer .cta .btn{width:100%;color:#0B2D50}
+ .drawer .cta .btn-primary{color:#fff}
+}
+/* hero */
+.hero{position:relative;background:radial-gradient(900px 480px at 85% -10%,rgba(31,111,209,.35),transparent 60%),linear-gradient(120deg,#082340 0%,#0B2D50 60%,#123E6B 100%);color:#D9E6F5;padding:80px 0 76px;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+.hero h1{color:#fff;max-width:20ch}
+.hero .eyebrow{color:#8CC4FF}
+.hero .lead{color:#C9D8EA;font-size:18px;max-width:60ch}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-points{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:26px;font-size:14px;color:#C9D8EA}
+.hero-points span{display:inline-flex;align-items:center;gap:8px}
+.hero-points .i{color:#8CC4FF;width:18px;height:18px}
+.hero-panel{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:24px}
+.hero-panel h3{color:#fff;font-size:15px;margin-bottom:14px;text-transform:uppercase;letter-spacing:.08em}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:rgba(255,255,255,.08);border-radius:12px;padding:16px}
+.stat b{display:block;font:800 30px/1.1 Inter,sans-serif;color:#fff}
+.stat span{font-size:13px;color:#C9D8EA;line-height:1.4;display:block;margin-top:4px}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:32px}.hero{padding:56px 0}}
+/* cards and tiles */
+.svc{display:flex;gap:16px;align-items:flex-start;padding:22px;background:#fff;border:1px solid #E2E8F0;border-radius:12px;color:inherit;text-decoration:none;height:100%;transition:border-color .15s,box-shadow .15s,transform .15s}
+.svc:hover{border-color:#9FC0E8;box-shadow:0 10px 26px rgba(11,45,80,.1);transform:translateY(-2px);text-decoration:none}
+.svc-body{display:flex;flex-direction:column;min-width:0;flex:1}
+.svc h3{font-size:16.5px;margin:0 0 6px}
+.svc p{font-size:14px;color:#5A6B82;margin:0 0 12px;line-height:1.55}
+.svc .from{font-size:13px;color:#0B2D50;font-weight:600;margin-bottom:8px}
+.svc .more{font-size:14px;font-weight:700;color:#1F6FD1;display:inline-flex;align-items:center;gap:6px;margin-top:auto}
+.rules .card{border-top:4px solid #1F6FD1}
+.rules .big{font:800 34px/1.1 Inter,sans-serif;color:#0B2D50;margin:8px 0 6px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.step .no{width:42px;height:42px;border-radius:50%;background:#0B2D50;color:#fff;font:700 16px Inter,sans-serif;display:grid;place-items:center;margin-bottom:14px}
+.step h3{font-size:16px}
+.step p{font-size:14.5px;color:#5A6B82;margin:0}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-size:15px}
+.checks .i{color:#0E8A5F;width:18px;height:18px;margin-top:3px}
+/* pricing */
+.table-wrap{overflow-x:auto;border:1px solid #E2E8F0;border-radius:12px;background:#fff}
+.ptable{width:100%;border-collapse:collapse;font-size:14.5px;min-width:820px}
+.ptable th{background:#F3F7FC;color:#0B2D50;font:700 13px/1.3 Inter,sans-serif;text-align:left;padding:12px 14px;border-bottom:1px solid #E2E8F0}
+.ptable td{padding:14px;border-bottom:1px solid #E2E8F0;vertical-align:middle}
+.ptable tr:last-child td{border-bottom:0}
+.ptable .svc-name b{display:block;color:#0B2D50;font-size:15px}
+.ptable .svc-name small{color:#5A6B82;font-size:12.5px}
+.ptable .base{font-weight:700;color:#0B2D50;white-space:nowrap}
+.ptable .disc{font-weight:800;color:#0E8A5F;white-space:nowrap}
+.ptable .disc small{display:block;font-weight:600;color:#5A6B82;font-size:12px}
+.ptable .deliv{font-size:13px;color:#5A6B82;line-height:1.5}
+.ptable .deliv b{color:#1B2A3F}
+.ptable .add-cell{white-space:nowrap}
+.ptable .add-cell .btn{min-height:36px;padding:0 10px;font-size:12.5px;margin:2px 4px 2px 0}
+.ptable .add-cell .btn.added{background:#0E8A5F;border-color:#0E8A5F;color:#fff}
+.pricing-layout{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+.order-panel{position:sticky;top:100px;background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:22px;box-shadow:0 10px 30px rgba(11,45,80,.08)}
+.order-panel h3{margin-bottom:12px}
+.op-list{list-style:none;margin:0 0 14px;padding:0}
+.op-line{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #E2E8F0}
+.op-name b{display:block;color:#0B2D50;font-size:14.5px;margin-bottom:6px}
+.op-ctl{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.op-ctl select{min-height:36px;border:1px solid #C5D3E4;border-radius:8px;padding:0 8px;font:500 13.5px Inter,sans-serif;background:#fff;color:#1B2A3F}
+.op-urg{font-size:12.5px;color:#5A6B82;display:inline-flex;align-items:center;gap:6px;min-height:36px}
+.op-urg input{width:18px;height:18px;accent-color:#1F6FD1}
+.op-price{text-align:right;white-space:nowrap}
+.op-price b{color:#0B2D50;font-size:15px}
+.op-price s{color:#8A98AB;font-size:12.5px;margin-right:4px}
+.op-rm{display:block;margin:6px 0 0 auto;background:none;border:0;color:#B91C1C;font:600 12.5px Inter,sans-serif;cursor:pointer;min-height:32px;padding:0}
+.op-sum{margin:0 0 14px}
+.op-sum div{display:flex;justify-content:space-between;gap:10px;padding:8px 0;font-size:14.5px;border-bottom:1px dashed #E2E8F0}
+.op-sum dt{color:#5A6B82}
+.op-sum dd{margin:0;font-weight:600;color:#1B2A3F}
+.op-disc dd{color:#0E8A5F}
+.op-total{border-bottom:0!important;border-top:2px solid #0B2D50;margin-top:6px;padding-top:12px!important}
+.op-total dt,.op-total dd{color:#0B2D50;font-weight:800;font-size:17px}
+.op-adv{background:#EAF2FB;border-radius:10px;padding:10px 12px!important;border:0!important;margin:8px 0}
+.op-adv dt,.op-adv dd{color:#1859AD;font-weight:700}
+.op-note{font-size:12.5px;color:#5A6B82;margin:12px 0 0}
+.op-empty p{color:#5A6B82;font-size:14.5px}
+.cartbar{display:none}
+@media(max-width:1024px){
+ .pricing-layout{grid-template-columns:1fr}
+ .order-panel{position:static}
+ .cartbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#0B2D50;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px rgba(8,35,64,.25)}
+ .cartbar small{color:#C9D8EA;display:block;font-size:12px}
+ .cartbar b{font-size:17px}
+ .cartbar .btn{background:#fff;color:#0B2D50;min-height:40px}
+}
+@media(max-width:820px){
+ .table-wrap{overflow:visible;border:0;background:none}
+ .ptable{min-width:0}
+ .ptable thead{display:none}
+ .ptable tr{display:block;background:#fff;border:1px solid #E2E8F0;border-radius:12px;margin-bottom:14px;padding:10px 14px}
+ .ptable td{display:flex;justify-content:space-between;align-items:center;gap:12px;border:0;padding:8px 0;text-align:right}
+ .ptable td::before{content:attr(data-label);font-weight:700;color:#5A6B82;font-size:13px;text-align:left}
+ .ptable td.svc-name{display:block;text-align:left}
+ .ptable td.svc-name::before{content:none}
+ .ptable td.add-cell{display:block;text-align:left}
+ .ptable td.add-cell::before{content:none}
+ .ptable td.add-cell .btn{width:calc(50% - 6px);margin:0 6px 0 0}
+}
+/* samples, reviews, forms */
+.sample{background:#fff;border:1px solid #E2E8F0;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;height:100%}
+.sample .ph{background:#F3F7FC;display:grid;place-items:center;padding:20px;min-height:300px}
+.sample img{max-height:440px;width:auto;border-radius:4px;box-shadow:0 8px 24px rgba(11,45,80,.15)}
+.sample .bd{padding:18px 20px;flex:1}
+.sample h3{font-size:16px;margin-bottom:4px}
+.sample p{font-size:14px;color:#5A6B82;margin:0}
+.book{background:linear-gradient(160deg,#0B2D50,#1F6FD1);color:#fff;border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:14px;min-height:300px;justify-content:space-between;height:100%}
+.book .eyebrow{color:#BFE0FF;margin:0}
+.book .spine{font:800 28px/1.1 Inter,sans-serif;letter-spacing:-.01em;color:#fff;margin:0}
+.book .sub{font-size:14.5px;color:#E3EEFA;margin:0}
+.book .by{font-size:13px;color:#BFD4EA;margin:0}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.rev-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.rev-grid{grid-template-columns:1fr}}
+.rev{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.rev-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.rev-top small{color:#5A6B82;font-size:12.5px}
+.rev p{margin:0;font-size:15px;color:#1B2A3F}
+.rev-by b{display:block;color:#0B2D50;font-size:14.5px}
+.rev-by span{font-size:13px;color:#5A6B82}
+.stars{color:#F5A524;letter-spacing:2px;font-size:17px;white-space:nowrap}
+.stars i{font-style:normal;color:#D5DCE6}
+.empty{background:#fff;border:1px dashed #B9C8DA;border-radius:12px;padding:24px;color:#5A6B82;text-align:center;grid-column:1/-1}
+.form{display:grid;gap:14px}
+.field{display:grid;gap:6px;margin:0}
+.field>label{font-weight:600;font-size:14px;color:#0B2D50}
+.field input,.field select,.field textarea{width:100%;min-height:46px;border:1px solid #C5D3E4;border-radius:8px;padding:10px 14px;font:400 15px Inter,sans-serif;background:#fff;color:#1B2A3F}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#1F6FD1;outline:2px solid rgba(31,111,209,.2);outline-offset:0}
+.field .hint{font-size:12.5px;color:#5A6B82}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.row2{grid-template-columns:1fr}}
+.pw{display:block;position:relative}
+.pw input{padding-right:52px}
+.eye{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;background:none;color:#64748B;cursor:pointer;display:grid;place-items:center;border-radius:8px;padding:0}
+.eye:hover{color:#1F6FD1}
+.check{display:flex;align-items:center;gap:10px;font-size:14px;min-height:44px;margin:0}
+.check input{width:20px;height:20px;accent-color:#1F6FD1}
+.msg{font-size:14px;min-height:20px;margin:0}
+.msg.err{color:#B91C1C}
+.msg.ok{color:#047857}
+.notice{background:#EAF2FB;border-left:4px solid #1F6FD1;border-radius:8px;padding:14px 16px;font-size:14.5px;color:#27405e;margin:0}
+.notice.warn{background:#FFF7E6;border-color:#E6A23C;color:#6b4a00}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+.two-col{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:start}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}}
+.order-cta{position:sticky;top:100px}
+.price-line{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0 16px}
+.price-line div{background:#F3F7FC;border-radius:10px;padding:12px}
+.price-line small{display:block;color:#5A6B82;font-size:12.5px}
+.price-line b{display:block;font:800 22px/1.2 Inter,sans-serif;color:#0B2D50}
+.price-line .off{display:inline-block;background:#FFEBD2;color:#B45F00;border-radius:99px;padding:2px 9px;font:700 11.5px/1.5 Inter,sans-serif;margin-top:4px}
+.order-cta .btn{margin-bottom:10px}
+/* page hero (inner pages) */
+.page-hero{background:radial-gradient(700px 360px at 90% -20%,rgba(31,111,209,.3),transparent 60%),linear-gradient(120deg,#082340,#0B2D50 65%,#123E6B);color:#D9E6F5;padding:52px 0 48px}
+.page-hero h1{color:#fff;font-size:clamp(28px,3.6vw,42px);max-width:24ch}
+.page-hero .lead{color:#C9D8EA;font-size:17px;max-width:64ch}
+.crumbs{font-size:13.5px;color:#9FB5CE;margin-bottom:14px}
+.crumbs a{color:#D5E1EF}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+.fact{background:rgba(255,255,255,.08);border-radius:12px;padding:14px 16px;border:1px solid rgba(255,255,255,.12)}
+.fact small{display:block;color:#9FB5CE;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.fact b{display:block;color:#fff;font-size:19px;margin-top:4px;line-height:1.3}
+@media(max-width:820px){.facts{grid-template-columns:1fr 1fr}}
+.prose{max-width:800px}
+.prose h3{margin-top:28px}
+.faq details{background:#fff;border:1px solid #E2E8F0;border-radius:10px;padding:0 18px;margin-bottom:10px}
+.faq summary{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;font-weight:700;color:#0B2D50;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 24px/1 Inter,sans-serif;color:#1F6FD1;flex:none}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:0 0 16px;color:#33465d}
+.faq details a{text-decoration:underline}
+/* payments */
+.pay-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:560px){.pay-tiles{grid-template-columns:1fr 1fr}}
+.mtile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:118px;padding:12px;background:#fff;border:2px solid #E2E8F0;border-radius:12px;cursor:pointer;font:600 13.5px/1.3 Inter,sans-serif;color:#243247;text-align:center}
+.mtile:hover{border-color:#9FC0E8}
+.mtile[aria-pressed=true]{border-color:#1F6FD1;box-shadow:0 0 0 3px rgba(31,111,209,.2)}
+.mtile img{height:44px;width:auto;max-width:100%;object-fit:contain}
+.mtile small{font:500 12px/1.3 Inter,sans-serif;color:#5A6B82}
+.pay-panel{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:22px;margin-top:16px}
+.pay-panel h3{margin-bottom:6px}
+.due{background:#EAF2FB;border-radius:10px;padding:12px 14px;margin:10px 0 14px;font-size:15px}
+.cpy{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#F3F7FC;border-radius:10px;padding:12px 14px;margin:8px 0}
+.cpy small{color:#5A6B82;font-size:12.5px}
+.cpy code{font:700 17px ui-monospace,Menlo,Consolas,monospace;color:#0B2D50;word-break:break-all}
+.vsteps{padding-left:20px;margin:12px 0;font-size:14.5px;color:#33465d}
+.vsteps li{margin-bottom:4px}
+.qr{max-width:160px;border:1px solid #E2E8F0;border-radius:10px;margin:8px 0}
+.trx{border-top:1px solid #E2E8F0;margin-top:16px;padding-top:16px;display:grid;gap:14px}
+.trx h4{margin:0}
+/* dashboard */
+.app{display:grid;grid-template-columns:240px 1fr;gap:24px;max-width:1200px;margin:0 auto;padding:28px 20px 60px;align-items:start}
+.app-side{background:#fff;border:1px solid #E2E8F0;border-radius:14px;padding:14px;position:sticky;top:100px}
+.who{display:flex;gap:12px;align-items:center;padding:6px 6px 14px;border-bottom:1px solid #E2E8F0;margin-bottom:8px}
+.who b{display:block;color:#0B2D50;font-size:15px}
+.who small{color:#5A6B82;font-size:12.5px;word-break:break-all}
+.av{width:44px;height:44px;border-radius:50%;background:#0B2D50;color:#fff;display:grid;place-items:center;font:700 15px Inter,sans-serif;flex:none}
+.tabbtn{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:0 12px;border:0;background:none;border-radius:8px;color:#243247;font:600 14.5px Inter,sans-serif;cursor:pointer;text-align:left;text-decoration:none}
+.tabbtn:hover,.tabbtn.on{background:#EAF2FB;color:#1859AD;text-decoration:none}
+.tabbtn.out{color:#B91C1C}
+.tabbtn .i{width:18px;height:18px}
+.app-main h1{font-size:26px;margin-bottom:4px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0 20px}
+.kpi{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:16px 18px}
+.kpi small{color:#5A6B82;font-size:13px}
+.kpi b{display:block;font:800 26px/1.1 Inter,sans-serif;color:#0B2D50;margin-top:4px}
+.panel-card{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:20px;margin-bottom:16px}
+.panel-card h3{margin-bottom:10px}
+.ord{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:20px;margin-bottom:16px}
+.ord-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.ord-head b{font:700 15px ui-monospace,Menlo,Consolas,monospace;color:#0B2D50}
+.ord-head small{display:block;color:#5A6B82}
+.status{display:inline-block;border-radius:99px;padding:4px 12px;font:700 12.5px/1.5 Inter,sans-serif;background:#E0EDFF;color:#164A85}
+.status.done{background:#DDF4E8;color:#0B7A4F}
+.status.wait{background:#FFF1D6;color:#8a5a00}
+.stepper{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:18px 0 8px;list-style:none;padding:0}
+.stepper li{font-size:11.5px;line-height:1.3;color:#5A6B82;text-align:center;padding-top:22px;position:relative}
+.stepper li::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:#E4ECF5;border:2px solid #E4ECF5;z-index:1}
+.stepper li::after{content:"";position:absolute;top:6px;left:calc(50% + 10px);right:calc(-50% + 10px);height:2px;background:#E4ECF5}
+.stepper li:last-child::after{display:none}
+.stepper li.done::before{background:#0E8A5F;border-color:#0E8A5F}
+.stepper li.done::after{background:#0E8A5F}
+.stepper li.cur::before{background:#fff;border-color:#1F6FD1}
+.stepper li.done,.stepper li.cur{color:#0B2D50;font-weight:700}
+.ord-lines{list-style:none;margin:12px 0;padding:0}
+.ord-lines li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed #E2E8F0;font-size:14.5px}
+.ord-tot{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0}
+.ord-tot div{background:#F3F7FC;border-radius:10px;padding:10px 12px}
+.ord-tot small{display:block;color:#5A6B82;font-size:12px}
+.ord-tot b{color:#0B2D50}
+.ord-act{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.pi{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #E2E8F0;font-size:14.5px}
+.pi:last-child{border:0}
+.bell{position:relative;width:44px;height:44px;border:1px solid #D5DEEA;border-radius:10px;background:#fff;display:grid;place-items:center;cursor:pointer;color:#0B2D50;padding:0}
+.bell .dot{position:absolute;top:-6px;right:-6px;min-width:18px;height:18px;border-radius:99px;background:#E11D48;color:#fff;font:700 11px/18px Inter,sans-serif;text-align:center;padding:0 4px}
+.dash-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:6px;position:relative}
+.npanel{position:absolute;right:0;top:52px;width:min(360px,92vw);background:#fff;border:1px solid #E2E8F0;border-radius:12px;box-shadow:0 18px 40px rgba(11,45,80,.16);padding:8px;z-index:70}
+.nit{display:block;padding:10px 12px;border-radius:8px;color:#1B2A3F;font-size:14px;text-decoration:none}
+.nit:hover{background:#F5F8FC;text-decoration:none}
+.nit small{display:block;color:#5A6B82}
+.bnav{display:none}
+@media(max-width:900px){
+ .app{grid-template-columns:1fr;padding:18px 14px 110px}
+ .app-side{display:none}
+ .bnav{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid #E2E8F0;grid-template-columns:repeat(4,1fr);padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+ .bn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border:0;background:none;border-radius:12px;color:#64748B;font:600 12px Inter,sans-serif;cursor:pointer}
+ .bn.on{background:#EAF2FB;color:#0B2D50}
+ .bn .i{width:22px;height:22px}
+ .kpis{grid-template-columns:1fr 1fr 1fr;gap:8px}
+ .kpi b{font-size:20px}
+ .ord-tot{grid-template-columns:1fr}
+}
+/* bands and footer */
+.band-dark{background:linear-gradient(120deg,#082340,#0B2D50);color:#D9E6F5;border-radius:16px;padding:34px;display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
+.band-dark h2{color:#fff;font-size:clamp(22px,2.6vw,28px);margin-bottom:6px}
+.band-dark p{color:#C9D8EA;margin:0;max-width:62ch}
+.band-dark .acts{display:flex;gap:10px;flex-wrap:wrap}
+.founder{display:grid;grid-template-columns:260px 1fr;gap:36px;align-items:center}
+.founder img{width:100%;max-width:260px;border-radius:14px;object-fit:cover;aspect-ratio:4/5;background:#EAF2FB}
+.creds{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:8px}
+.creds li{display:flex;gap:10px;font-size:15px}
+.creds .i{color:#0E8A5F;width:18px;height:18px;margin-top:3px}
+@media(max-width:820px){.founder{grid-template-columns:1fr}.founder img{max-width:200px}}
+.site-footer{background:#082340;color:#B9C9DC;padding:56px 0 24px;font-size:14.5px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
+.foot-brand b{display:block;color:#fff;font:800 22px/1.05 Inter,sans-serif}
+.foot-brand small{display:block;color:#8CC4FF;font:700 10.5px/1 Inter,sans-serif;letter-spacing:.14em;margin-top:6px}
+.foot-brand p{font-size:14px;margin-top:14px;max-width:34ch}
+.foot-col h4{color:#fff;font:700 12.5px/1.4 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
+.foot-col a{display:flex;align-items:center;gap:8px;min-height:32px;color:#D5E1EF;text-decoration:none}
+.foot-col a:hover{color:#fff;text-decoration:underline}
+.foot-col .i{width:16px;height:16px;color:#8CC4FF}
+.foot-col .btn{margin-top:8px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:18px;font-size:13px;color:#8FA3BC;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.foot-bottom a{display:inline;min-height:0;color:#D5E1EF}
+/* installable app mode */
+.appnav{display:none}
+html.app-mode .site-footer,html.app-mode .util,html.app-mode .annc{display:none}
+@media(max-width:1199px){
+ html.app-mode .appnav{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid #E2E8F0;grid-template-columns:repeat(4,1fr);padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+ html.app-mode body{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
+ html.app-mode .cartbar{bottom:calc(70px + env(safe-area-inset-bottom))}
+}
+html.app-mode .appnav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:12px;color:#64748B;font:600 12px Inter,sans-serif;text-decoration:none}
+html.app-mode .appnav a.on{background:#EAF2FB;color:#0B2D50}
+html.app-mode .appnav .i{width:22px;height:22px}
+.offbar{position:fixed;left:0;right:0;top:0;z-index:95;background:#B45F00;color:#fff;text-align:center;font:600 13px/1.4 Inter,sans-serif;padding:6px 10px}
+.samples-note{font-size:14px;color:#5A6B82;margin-top:16px}
+
+.hdr .wrap{gap:14px}
+.nav{gap:0}
+.nav>a,.nav>.dd>button{min-height:42px;padding:0 10px;font-size:14px}
+.nav .nav-cta{color:#1F6FD1;font-weight:700;border:1px solid #C5D3E4;border-radius:8px;margin-left:8px;padding:0 12px;display:inline-flex;align-items:center;min-height:42px;font-size:14px;text-decoration:none}
+.nav .nav-cta:hover{border-color:#1F6FD1;background:#EAF2FB;text-decoration:none}
+.hdr-right{display:flex;align-items:center;gap:10px}
+.btn-signin{min-height:42px;padding:0 16px;font-size:14px}
+.mega a:not(.all){display:block;border:1px solid #D5DEEA;border-radius:8px;padding:9px 12px;margin:0 0 8px;background:#fff;color:#243247;font-weight:600;font-size:13.5px;line-height:1.35}
+.mega a:not(.all):hover{border-color:#1F6FD1;color:#1F6FD1;background:#F5F8FC;text-decoration:none}
+.mega .all{grid-column:1/-1;text-align:right;color:#1F6FD1;font-weight:700;border:0;padding:12px 0 0;margin:0}
+.drawer .acc-btn{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:50px;padding:0 10px;border:0;background:none;border-radius:10px;color:#243247;font:600 16px Inter,sans-serif;cursor:pointer;text-align:left}
+.drawer .acc-btn:hover{background:#F5F8FC}
+.drawer .acc-btn .i{transition:transform .2s;width:18px;height:18px}
+.drawer .acc-btn[aria-expanded=true] .i{transform:rotate(180deg)}
+.drawer .acc-panel{padding:2px 0 10px 6px}
+.drawer .acc-panel[hidden]{display:none}
+.drawer .acc-panel a:not(.all){display:flex;align-items:center;min-height:42px;border:1px solid #D5DEEA;border-radius:8px;background:#fff;margin:0 0 8px;padding:0 12px;font-weight:600;font-size:14px;color:#243247}
+.drawer .acc-panel .grp{padding:10px 4px 6px;font:700 11px Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#1F6FD1}
+.drawer .acc-panel .all{color:#1F6FD1;font-weight:700;border:0;padding:6px 4px;min-height:0}
+.pay-window{background:#fff;border:1px solid #E2E8F0;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(11,45,80,.08)}
+.pw-top{display:grid;grid-template-columns:repeat(4,1fr);background:linear-gradient(120deg,#0B2D50,#1F6FD1);color:#fff}
+.pw-top>div{padding:14px 16px;border-right:1px solid rgba(255,255,255,.14)}
+.pw-top>div:last-child{border-right:0}
+.pw-top small{display:block;color:#BFD4EA;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.pw-top b{display:block;font:700 15px ui-monospace,Menlo,Consolas,monospace;margin-top:4px;word-break:break-all}
+.pw-body{padding:22px}
+@media(max-width:700px){.pw-top{grid-template-columns:1fr 1fr}.pw-top>div:nth-child(2){border-right:0}}
+@media(max-width:420px){.brand small{display:none}.btn-signin{padding:0 12px}}
+</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></symbol><symbol id="i-clip" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M8 12h8M8 16h5"/></symbol><symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></symbol><symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol><symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol><symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></symbol><symbol id="i-card" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></symbol><symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol><symbol id="i-shieldcheck" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol><symbol id="i-trend" viewBox="0 0 24 24"><path d="m23 6-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></symbol></svg><a class="skip" href="#main">Skip to content</a><header class="hdr"><div class="wrap"><a class="brand" href="index.html" aria-label="YS Scholaria home"><img src="mark.png" alt="" width="50" height="50"><span><b>YS Scholaria</b><small>LEARN · RESEARCH · GROW</small></span></a><nav class="nav" aria-label="Main"><div class="dd"><button type="button" aria-expanded="false" aria-haspopup="true">Services <svg class="i" aria-hidden="true"><use href="#i-chev"/></svg></button><div class="mega"><div><h4>Career documents</h4><a href="cv-resume.html">CV &amp; Resume Writing</a><a href="cover-letter.html">Cover Letter</a><a href="linkedin-optimization.html">LinkedIn Optimization</a></div><div><h4>Academic and research</h4><a href="sop.html">SOP Writing</a><a href="thesis-consultation.html">Complete Thesis Consultation</a><a href="spss-data-analysis.html">Data Analysis</a><a href="research-proposal.html">Research Proposal Writing</a><a href="report-writing.html">Research Report Writing</a><a href="higher-study.html">Higher-study Support</a></div><div><h4>Digital services</h4><a href="business-website.html">Business Website</a><a href="personal-website.html">Personal Website</a></div><a class="all" href="services.html">View all services →</a></div></div><a href="pricing.html">Pricing</a><a href="samples.html">Samples</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-cta" href="payments.html">Pay now</a><a class="nav-cta" href="reviews.html#review">Write a review</a></nav><div class="hdr-right"><a class="btn btn-outline btn-signin" href="login.html">Sign in</a><button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button></div></div></header><div class="drawer" id="drawer"><div class="scrim"></div><div class="panel" role="dialog" aria-label="Menu"><div class="head"><span class="brand-mini">Menu</span><button type="button" class="burger" id="drawerClose" aria-label="Close menu"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button></div><a href="index.html">Home</a><div class="acc"><button type="button" class="acc-btn" aria-expanded="false" aria-controls="svcList">Services<svg class="i" aria-hidden="true"><use href="#i-chev"/></svg></button><div class="acc-panel" id="svcList" hidden><div class="grp">Career documents</div><a href="cv-resume.html">CV &amp; Resume Writing</a><a href="cover-letter.html">Cover Letter</a><a href="linkedin-optimization.html">LinkedIn Optimization</a><div class="grp">Academic and research</div><a href="sop.html">SOP Writing</a><a href="thesis-consultation.html">Complete Thesis Consultation</a><a href="spss-data-analysis.html">Data Analysis</a><a href="research-proposal.html">Research Proposal Writing</a><a href="report-writing.html">Research Report Writing</a><a href="higher-study.html">Higher-study Support</a><div class="grp">Digital services</div><a href="business-website.html">Business Website</a><a href="personal-website.html">Personal Website</a><a class="all" href="services.html">View all services →</a></div></div><a href="pricing.html">Pricing</a><a href="samples.html">Samples</a><a href="reviews.html">Reviews</a><a href="resources.html">Resources</a><a href="about.html">About us</a><a href="contact.html">Contact</a><div class="cta"><a class="btn btn-primary" href="payments.html">Pay now</a><a class="btn btn-outline" href="reviews.html#review">Write a review</a><a class="btn btn-outline" href="request.html">Request a service</a></div></div></div><main id="main"><section class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / Sign in</nav><h1>Sign in or create an account</h1><p class="lead">Track your orders, payments and requests in one account.</p></div></section><section class="section "><div class="wrap"><div class="auth card" style="padding:28px"><div class="tabs" role="tablist"><button type="button" role="tab" data-tab="login" aria-selected="true">Sign in</button><button type="button" role="tab" data-tab="signup" aria-selected="false">Create account</button></div><form id="loginForm" class="form" novalidate><div class="field"><label for="lContact">Email or WhatsApp number</label><input id="lContact" name="contact" autocomplete="username" required></div><div class="field"><label for="lPass">Password</label><input id="lPass" type="password" name="password" autocomplete="current-password" required></div><label class="check"><input type="checkbox" id="remLogin" checked> Remember me on this device</label><p id="lMsg" class="msg" role="alert"></p><button class="btn btn-primary btn-block" type="submit">Sign in</button><p class="muted small" style="margin:0">Forgot your password? <a href="https://wa.me/8801557735353" target="_blank" rel="noopener">Message us on WhatsApp</a> and we will help.</p></form><form id="signupForm" class="form" novalidate hidden><div class="field"><label for="sName">Full name</label><input id="sName" autocomplete="name" required></div><div class="field"><label for="sContact">Email or WhatsApp number</label><input id="sContact" autocomplete="username" required></div><div class="row2"><div class="field"><label for="sPass">Password</label><input id="sPass" type="password" autocomplete="new-password" required><span class="hint">At least 8 characters.</span></div><div class="field"><label for="sPass2">Confirm password</label><input id="sPass2" type="password" autocomplete="new-password" required></div></div><label class="check"><input type="checkbox" id="remSignup" checked> Remember me on this device</label><p id="sMsg" class="msg" role="alert"></p><button class="btn btn-primary btn-block" type="submit">Create account</button></form><p class="muted small" style="margin:18px 0 0">Your account and orders are stored in this browser on this device.</p></div></div></section></main><footer class="site-footer"><div class="wrap"><div class="foot-grid"><div class="foot-brand"><div style="display:flex;align-items:center;gap:12px"><img src="mark-white.png" alt="" width="46" height="46"><div><b>YS Scholaria</b><small>LEARN · RESEARCH · GROW</small></div></div><p>Academic, research and career services for students, researchers and professionals in Bangladesh.</p><div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap"><a class="btn btn-wa btn-sm" href="https://wa.me/8801557735353" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-ghost btn-sm" href="https://mdyosuf.site" target="_blank" rel="noopener">Founder website</a></div></div><div class="foot-col"><h4>Services</h4><a href="cv-resume.html">CV &amp; Resume Writing</a><a href="cover-letter.html">Cover Letter</a><a href="linkedin-optimization.html">LinkedIn Optimization</a><a href="sop.html">SOP Writing</a><a href="thesis-consultation.html">Complete Thesis Consultation</a><a href="spss-data-analysis.html">Data Analysis</a><a href="research-proposal.html">Research Proposal Writing</a><a href="report-writing.html">Research Report Writing</a><a href="business-website.html">Business Website</a><a href="personal-website.html">Personal Website</a><a href="higher-study.html">Higher-study Support</a></div><div class="foot-col"><h4>Company</h4><a href="about.html">About us</a><a href="pricing.html">Pricing</a><a href="samples.html">Samples</a><a href="reviews.html">Reviews</a><a href="resources.html">Resources</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="free-materials.html">Free study materials</a></div><div class="foot-col"><h4>Contact</h4><a href="tel:+8801557735353"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>+880 1557 735353</a><a href="https://wa.me/8801557735353" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-msg"/></svg>WhatsApp chat</a><a href="mailto:ysscholaria@gmail.com"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>ysscholaria@gmail.com</a><span style="display:flex;align-items:center;gap:8px;min-height:32px"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Dhaka, Bangladesh</span><button type="button" class="btn btn-outline btn-sm" data-install>Install the app</button><span style="color:#9FB5CE;font-size:13px" data-install-note></span></div></div><div class="foot-bottom"><span>© 2026 YS Scholaria. All rights reserved.</span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refund policy</a></span></div><p style="color:#8FA3BC;margin-top:14px;font-size:12.5px">YS Scholaria is an independent service and is not affiliated with any university, journal, government body or research organisation.</p></div></footer><script src="config.js"></script><script>(function(){
+'use strict';
+var CFG=window.YS_CONFIG||{};
+var BK=CFG.backend||'';
+var WA='8801557735353',MAIL='ysscholaria@gmail.com';
+var SVC={"cv-resume.html": {"n": "CV & Resume Writing", "b": 500, "s": "At least 2 days", "u": "12 hours"}, "cover-letter.html": {"n": "Cover Letter", "b": 200, "s": "At least 1 day", "u": "6 hours"}, "linkedin-optimization.html": {"n": "LinkedIn Optimization", "b": 1000, "s": "At least 3 days", "u": "1 day"}, "sop.html": {"n": "SOP Writing", "b": 1500, "s": "At least 3 days", "u": "36 hours"}, "thesis-consultation.html": {"n": "Complete Thesis Consultation", "b": 15000, "s": "At least 30 days", "u": "10 days"}, "spss-data-analysis.html": {"n": "Data Analysis", "b": 4000, "s": "At least 7 days", "u": "48 hours"}, "research-proposal.html": {"n": "Research Proposal Writing", "b": 5000, "s": "At least 7 days", "u": "3 days"}, "report-writing.html": {"n": "Research Report Writing", "b": 5000, "s": "At least 7 days", "u": "3 days"}, "business-website.html": {"n": "Business Website", "b": 8000, "s": "At least 10 days", "u": "4 days"}, "personal-website.html": {"n": "Personal Website", "b": 5000, "s": "At least 7 days", "u": "3 days"}};
+var PAY=[{"id": "bkash", "name": "bKash", "sub": "Mobile banking", "kind": "wallet", "rows": [["Send to", "+880 1557 735353", "01557735353"], ["Recipient", "Md. Yosuf", ""]], "steps": ["Open the app and choose Send Money.", "Enter the number above and the exact amount shown.", "Confirm with your PIN inside the app only.", "Copy the transaction ID (TrxID) and submit it below."]}, {"id": "nagad", "name": "Nagad", "sub": "Mobile banking", "kind": "wallet", "rows": [["Send to", "+880 1557 735353", "01557735353"], ["Recipient", "Md. Yosuf", ""]], "steps": ["Open the app and choose Send Money.", "Enter the number above and the exact amount shown.", "Confirm with your PIN inside the app only.", "Copy the transaction ID (TrxID) and submit it below."]}, {"id": "upay", "name": "Upay", "sub": "Mobile banking", "kind": "wallet", "rows": [["Send to", "+880 1557 735353", "01557735353"], ["Recipient", "Md. Yosuf", ""]], "steps": ["Open the app and choose Send Money.", "Enter the number above and the exact amount shown.", "Confirm with your PIN inside the app only.", "Copy the transaction ID (TrxID) and submit it below."]}, {"id": "rocket", "name": "Rocket", "sub": "Mobile banking", "kind": "wallet", "rows": [["Send to", "01557-735353-5", "015577353535"], ["Recipient", "Md. Yosuf", ""]], "steps": ["Open the app and choose Send Money.", "Enter the number above and the exact amount shown.", "Confirm with your PIN inside the app only.", "Copy the transaction ID (TrxID) and submit it below."]}, {"id": "nexuspay", "name": "NexusPay", "sub": "Mobile app", "kind": "wallet", "rows": [["Account number", "01557-735353", "01557735353"], ["Account name", "Md. Yosuf", ""]], "steps": ["Open the app and choose Send Money.", "Enter the number above and the exact amount shown.", "Confirm with your PIN inside the app only.", "Copy the transaction ID (TrxID) and submit it below."]}, {"id": "cellfin", "name": "Cellfin", "sub": "Mobile banking", "kind": "wallet", "rows": [["Account number", "01557-735353", "01557735353"], ["Account name", "Md. Yosuf", ""]], "steps": ["Open the app and choose Send Money.", "Enter the number above and the exact amount shown.", "Confirm with your PIN inside the app only.", "Copy the transaction ID (TrxID) and submit it below."]}, {"id": "dbbl", "name": "Dutch-Bangla Bank", "sub": "Bank transfer", "kind": "bank", "rows": [["Bank", "Dutch-Bangla Bank Limited", ""], ["Account name", "MD YOSUF", ""], ["Account number", "7017332329950", "7017332329950"]], "steps": ["Transfer the exact amount to the account above, by app or branch deposit.", "Keep the transaction reference or deposit slip.", "Enter that reference as the transaction ID below."]}, {"id": "ibbl", "name": "Islami Bank", "sub": "Bank transfer", "kind": "bank", "rows": [["Bank", "Islami Bank Bangladesh Limited", ""], ["Account name", "MD YOSUF", ""], ["Account number", "20501916700191305", "20501916700191305"]], "steps": ["Transfer the exact amount to the account above, by app or branch deposit.", "Keep the transaction reference or deposit slip.", "Enter that reference as the transaction ID below."]}, {"id": "redotpay", "name": "RedotPay", "sub": "Virtual card", "kind": "card", "rows": [], "steps": []}];
+var OFF={Student:0.3,Professional:0.2};
+var ADV=0.2,ADVPCT=20;
+
+function $(i){return document.getElementById(i)}
+function qa(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function fmt(n){return '৳'+Math.round(n).toLocaleString('en-US')}
+function ic(n){return '<svg class="i" aria-hidden="true"><use href="#i-'+n+'"/></svg>'}
+function mem(){var m={};return{getItem:function(k){return Object.prototype.hasOwnProperty.call(m,k)?m[k]:null},setItem:function(k,v){m[k]=String(v)},removeItem:function(k){delete m[k]}}}
+function store(n){try{var s=window[n];s.setItem('__t','1');s.removeItem('__t');return s}catch(e){return mem()}}
+var LS=store('localStorage'),SS=store('sessionStorage');
+function jget(s,k,d){try{var v=JSON.parse(s.getItem(k));return v==null?d:v}catch(e){return d}}
+function jset(s,k,v){try{s.setItem(k,JSON.stringify(v))}catch(e){}}
+function today(){return new Date().toISOString().slice(0,10)}
+function uid(p){return p+'-'+new Date().toISOString().slice(2,10).replace(/-/g,'')+'-'+Math.random().toString(36).slice(2,6).toUpperCase()}
+function fdate(d){var t=new Date(String(d)+'T00:00:00');return isNaN(t)?String(d||''):t.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}
+function sha(s){
+ if(window.crypto&&window.crypto.subtle&&window.TextEncoder){
+  return window.crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)).then(function(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return('0'+x.toString(16)).slice(-2)}).join('')});
+ }
+ var h=5381;for(var i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))|0;
+ return Promise.resolve('w'+h);
+}
+
+/* backend (Google Apps Script web app, see backend/SETUP.txt) */
+function send(o){
+ if(!BK)return Promise.resolve(false);
+ return fetch(BK,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(o)}).then(function(){return true},function(){return false});
+}
+function read(q){
+ if(!BK)return Promise.resolve(null);
+ return fetch(BK+(BK.indexOf('?')>-1?'&':'?')+q).then(function(r){return r.json()}).catch(function(){return null});
+}
+
+/* cart and pricing */
+var CART=jget(LS,'ys_cart',[]);
+function saveCart(){jset(LS,'ys_cart',CART)}
+function idx(k){for(var i=0;i<CART.length;i++)if(CART[i].k===k)return i;return -1}
+function calc(){
+ var L=[],sub=0,disc=0,tot=0;
+ CART.forEach(function(it){
+  var s=SVC[it.k];if(!s)return;
+  var pct=it.u?0:(OFF[it.p]||0);
+  var fin=Math.round(s.b*(1-pct));
+  L.push({k:it.k,n:s.n,b:s.b,p:it.p,u:!!it.u,f:fin,pct:pct});
+  sub+=s.b;disc+=s.b-fin;tot+=fin;
+ });
+ var adv=Math.ceil(tot*ADV);
+ return{lines:L,sub:sub,disc:disc,total:tot,adv:adv,bal:tot-adv};
+}
+function lineText(c){return c.lines.map(function(x){return '- '+x.n+' ('+x.p+(x.u?', urgent':'')+'): '+fmt(x.f)}).join('\n')}
+function panelHTML(compact){
+ var c=calc();
+ if(!c.lines.length)return '<h3>Your order</h3><div class="op-empty"><p>No services added yet. Add services from the table and your total and '+ADVPCT+'% advance will appear here.</p><a class="btn btn-outline btn-sm" href="pricing.html">Browse services</a></div>';
+ var rows=c.lines.map(function(x){
+  return '<li class="op-line"><div class="op-name"><b>'+esc(x.n)+'</b><div class="op-ctl"><select data-pkg="'+esc(x.k)+'" aria-label="Package for '+esc(x.n)+'"><option'+(x.p==='Student'?' selected':'')+'>Student</option><option'+(x.p==='Professional'?' selected':'')+'>Professional</option></select><label class="op-urg"><input type="checkbox" data-urg="'+esc(x.k)+'"'+(x.u?' checked':'')+'> Urgent</label></div></div><div class="op-price">'+(x.pct?'<s>'+fmt(x.b)+'</s> ':'')+'<b>'+fmt(x.f)+'</b><button type="button" class="op-rm" data-rm="'+esc(x.k)+'">Remove</button></div></li>';
+ }).join('');
+ var sum='<dl class="op-sum"><div><dt>Subtotal</dt><dd>'+fmt(c.sub)+'</dd></div>'+(c.disc?'<div class="op-disc"><dt>Discounts</dt><dd>−'+fmt(c.disc)+'</dd></div>':'')+'<div class="op-total"><dt>Total payable</dt><dd>'+fmt(c.total)+'</dd></div><div class="op-adv"><dt>Pay now to confirm ('+ADVPCT+'%)</dt><dd>'+fmt(c.adv)+'</dd></div><div><dt>Balance after delivery</dt><dd>'+fmt(c.bal)+'</dd></div></dl>';
+ var acts=compact?'':'<a class="btn btn-primary btn-block" href="payments.html">Continue to checkout</a><a class="btn btn-outline btn-block" href="request.html">Send a request instead</a>';
+ return '<h3>Your order</h3><ul class="op-list">'+rows+'</ul>'+sum+acts+'<p class="op-note">Students get '+Math.round(OFF.Student*100)+'% off and professionals '+Math.round(OFF.Professional*100)+'% off. Urgent orders carry no discount.</p>';
+}
+function summaryHTML(o){
+ return '<h3>Order '+esc(o.id)+'</h3><ul class="ord-lines">'+o.items.map(function(i){return '<li><span>'+esc(i.n)+' · '+esc(i.p)+(i.u?' · urgent':'')+'</span><b>'+fmt(i.f)+'</b></li>'}).join('')+'</ul><dl class="op-sum"><div><dt>Total payable</dt><dd>'+fmt(o.total)+'</dd></div><div class="op-adv"><dt>Advance ('+ADVPCT+'%)</dt><dd>'+fmt(o.adv)+'</dd></div><div class="op-total"><dt>Balance after delivery</dt><dd>'+fmt(o.bal)+'</dd></div></dl>';
+}
+function paint(){
+ qa('[data-order]').forEach(function(p){p.innerHTML=panelHTML(p.getAttribute('data-compact')==='1')});
+ var bar=$('cartBar');
+ if(bar){var c=calc();bar.hidden=!CART.length;if($('cartN'))$('cartN').textContent=CART.length+(CART.length===1?' service':' services')+' in your order';if($('cartT'))$('cartT').textContent=fmt(c.total)}
+ qa('[data-add]').forEach(function(b){var i=idx(b.getAttribute('data-add'));var on=i>=0&&CART[i].p===b.getAttribute('data-pkg');b.classList.toggle('added',on);b.textContent=on?'Added ✓':b.getAttribute('data-label')});
+}
+document.addEventListener('click',function(e){
+ var t=e.target;
+ var a=t.closest?t.closest('[data-add]'):null;
+ if(a){var k=a.getAttribute('data-add'),p=a.getAttribute('data-pkg')||'Student',i=idx(k);if(i>=0)CART[i].p=p;else CART.push({k:k,p:p,u:false});saveCart();paint();return}
+ var r=t.closest?t.closest('[data-rm]'):null;
+ if(r){var j=idx(r.getAttribute('data-rm'));if(j>=0)CART.splice(j,1);saveCart();paint();return}
+ var c=t.closest?t.closest('[data-copy]'):null;
+ if(c){var v=c.getAttribute('data-copy');var done=function(){c.textContent='Copied ✓';setTimeout(function(){c.textContent='Copy'},1600)};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,function(){window.prompt('Copy this number:',v)})}else{window.prompt('Copy this number:',v)}}
+});
+document.addEventListener('change',function(e){
+ var t=e.target;
+ if(t.getAttribute&&t.getAttribute('data-pkg')!==null){var i=idx(t.getAttribute('data-pkg'));if(i>=0)CART[i].p=t.value}
+ else if(t.getAttribute&&t.getAttribute('data-urg')!==null){var j=idx(t.getAttribute('data-urg'));if(j>=0)CART[j].u=t.checked}
+ else return;
+ saveCart();paint();
+});
+
+/* menus */
+var burger=$('burger'),drawer=$('drawer');
+function setDrawer(o){if(!drawer)return;drawer.classList.toggle('open',o);document.documentElement.classList.toggle('lock',o);if(burger)burger.setAttribute('aria-expanded',String(o))}
+if(burger)burger.addEventListener('click',function(){setDrawer(!drawer.classList.contains('open'))});
+if($('drawerClose'))$('drawerClose').addEventListener('click',function(){setDrawer(false)});
+if(drawer){var sc=drawer.querySelector('.scrim');if(sc)sc.addEventListener('click',function(){setDrawer(false)})}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){setDrawer(false);qa('.dd.open').forEach(function(x){x.classList.remove('open')})}});
+qa('.dd>button').forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();var d=b.parentNode,o=!d.classList.contains('open');qa('.dd.open').forEach(function(x){x.classList.remove('open')});d.classList.toggle('open',o);b.setAttribute('aria-expanded',String(o))})});
+document.addEventListener('click',function(){qa('.dd.open').forEach(function(x){x.classList.remove('open')})});
+
+/* install, app mode, offline */
+var deferred=null;
+function installNote(msg){qa('[data-install-note]').forEach(function(n){n.textContent=msg})}
+window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferred=e;installNote('Ready to install on this device.')});
+window.addEventListener('appinstalled',function(){deferred=null;installNote('Installed. Open YS Scholaria from your home screen.')});
+qa('[data-install]').forEach(function(b){b.addEventListener('click',function(){
+ if(deferred){deferred.prompt();deferred.userChoice.then(function(){deferred=null})}
+ else{var ios=/iphone|ipad|ipod/i.test(navigator.userAgent);installNote(ios?'On iPhone: tap Share, then Add to Home Screen.':'In your browser menu, choose Install app or Add to Home screen.')}
+})});
+if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'))window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})});
+var standalone=(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches)||window.navigator.standalone===true;
+if(standalone){
+ document.documentElement.classList.add('app-mode');
+ if(!document.querySelector('.bnav')){
+  var here=location.pathname.split('/').pop()||'index.html';
+  var items=[['index.html','Home','home'],['services.html','Services','list'],['pricing.html','Order','plus'],['dashboard.html','Account','user']];
+  var nav=document.createElement('nav');nav.className='appnav';nav.setAttribute('aria-label','App');
+  nav.innerHTML=items.map(function(x){return '<a href="'+x[0]+'"'+(here===x[0]?' class="on"':'')+'>'+ic(x[2])+'<span>'+x[1]+'</span></a>'}).join('');
+  document.body.appendChild(nav);
+ }
+}
+function offline(){var b=$('offbar');if(!navigator.onLine){if(!b){b=document.createElement('div');b.id='offbar';b.className='offbar';b.textContent='You are offline. Pages you opened before are still available.';document.body.appendChild(b)}}else if(b)b.remove()}
+window.addEventListener('online',offline);window.addEventListener('offline',offline);offline();
+
+/* show or hide password */
+var EYE='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>';
+var EYEOFF='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19M1 1l22 22"/></svg>';
+qa('input[type=password]').forEach(function(inp){
+ if(inp.parentNode&&inp.parentNode.classList.contains('pw'))return;
+ var wrap=document.createElement('span');wrap.className='pw';
+ inp.parentNode.insertBefore(wrap,inp);wrap.appendChild(inp);
+ var b=document.createElement('button');b.type='button';b.className='eye';b.setAttribute('aria-label','Show password');b.setAttribute('aria-pressed','false');b.innerHTML=EYE;wrap.appendChild(b);
+ b.addEventListener('click',function(){var show=inp.type==='password';inp.type=show?'text':'password';b.setAttribute('aria-pressed',String(show));b.setAttribute('aria-label',show?'Hide password':'Show password');b.innerHTML=show?EYEOFF:EYE});
+});
+
+/* counters and reviews */
+function loadStats(){
+ if(!BK||!$('stViews'))return;
+ read('action=stats').then(function(s){
+  if(!s)return;
+  $('stViews').textContent=Number(s.views||0).toLocaleString('en-US');$('stViewsBox').hidden=false;
+  if($('stReq')){$('stReq').textContent=Number(s.requests||0).toLocaleString('en-US');$('stReqBox').hidden=false}
+ });
+}
+function starsHTML(n){n=Math.max(0,Math.min(5,Math.round(Number(n)||0)));return '<span class="stars" role="img" aria-label="'+n+' out of 5 stars">'+'★'.repeat(n)+'<i>'+'★'.repeat(5-n)+'</i></span>'}
+function sortRev(a){return a.slice().sort(function(x,y){var d=(Number(y.stars)||0)-(Number(x.stars)||0);if(d)return d;var p=String(y.date||''),q=String(x.date||'');return p<q?-1:p>q?1:0})}
+function revCard(r){return '<article class="rev"><div class="rev-top">'+starsHTML(r.stars)+'<small>'+esc(fdate(r.date))+'</small></div><p>“'+esc(r.text)+'”</p><div class="rev-by"><b>'+esc(r.name||'Client')+'</b><span>'+esc(r.service||'')+'</span></div></article>'}
+function paintReviews(list){
+ qa('[data-reviews]').forEach(function(box){
+  var lim=parseInt(box.getAttribute('data-limit'),10)||999;
+  var rows=sortRev(list).slice(0,lim);
+  box.innerHTML=rows.length?rows.map(revCard).join(''):'<div class="empty">Client reviews appear here once they have been checked. <a href="reviews.html#review">Share your experience</a>.</div>';
+ });
+}
+function loadReviews(){
+ if(!qa('[data-reviews]').length)return;
+ var local=Array.isArray(window.YS_REVIEWS)?window.YS_REVIEWS:[];
+ if(!BK){paintReviews(local);return}
+ read('action=reviews').then(function(r){paintReviews(Array.isArray(r)&&r.length?r:local)});
+}
+
+/* accounts (stored in this browser) */
+function curSid(){return SS.getItem('ys_s')||LS.getItem('ys_s')}
+function users(){return jget(LS,'ys_u',{})}
+function me(){var s=curSid();return s?(users()[s]||null):null}
+function keyOf(c){return String(c||'').trim().toLowerCase().replace(/\s+/g,'')}
+function nextPage(){var n=new URLSearchParams(location.search).get('next');return n&&/^[a-z-]+\.html$/.test(n)?n:'dashboard.html'}
+function logout(){LS.removeItem('ys_s');SS.removeItem('ys_s');location.href='index.html'}
+function ordersOf(){var u=me();return u?jget(LS,'ys_o_'+u.id,[]):[]}
+function setOrders(a){var u=me();if(u)jset(LS,'ys_o_'+u.id,a)}
+function orderFrom(id,status){var c=calc();return{id:id,date:today(),items:c.lines.map(function(x){return{k:x.k,n:x.n,p:x.p,u:x.u,b:x.b,f:x.f}}),sub:c.sub,disc:c.disc,total:c.total,adv:c.adv,bal:c.bal,status:status,pay:[]}}
+function saveOrder(o){var u=me();if(!u)return;var arr=jget(LS,'ys_o_'+u.id,[]);arr.unshift(o);jset(LS,'ys_o_'+u.id,arr)}
+function paidType(o,t){return (o.pay||[]).some(function(p){return p.type===t})}
+function statusOf(o){return o.remote||o.status||'Advance submitted'}
+
+/* sign in and sign up */
+var lf=$('loginForm'),sf=$('signupForm');
+if(lf&&sf){
+ if(me())location.replace(nextPage());
+ var showTab=function(t){qa('[data-tab]').forEach(function(b){b.setAttribute('aria-selected',String(b.getAttribute('data-tab')===t))});lf.hidden=t!=='login';sf.hidden=t!=='signup'};
+ qa('[data-tab]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();showTab(b.getAttribute('data-tab'))})});
+ showTab(location.hash==='#signup'?'signup':'login');
+ window.addEventListener('hashchange',function(){showTab(location.hash==='#signup'?'signup':'login')});
+ var lc=$('lContact');if(lc&&!lc.value&&LS.getItem('ys_last'))lc.value=LS.getItem('ys_last');
+ lf.addEventListener('submit',function(e){
+  e.preventDefault();
+  var m=$('lMsg'),c=$('lContact').value.trim(),p=$('lPass').value,k=keyOf(c),u=users()[k];
+  m.className='msg';
+  if(!u){m.className='msg err';m.textContent='No account was found for this email or WhatsApp number.';return}
+  sha(u.salt+p).then(function(h){
+   if(h!==u.h){m.className='msg err';m.textContent='The password is incorrect.';return}
+   var rem=$('remLogin')&&$('remLogin').checked;
+   (rem?LS:SS).setItem('ys_s',k);
+   if(rem)LS.setItem('ys_last',c);else LS.removeItem('ys_last');
+   location.href=nextPage();
+  });
+ });
+ sf.addEventListener('submit',function(e){
+  e.preventDefault();
+  var m=$('sMsg'),name=$('sName').value.trim(),c=$('sContact').value.trim(),p=$('sPass').value,p2=$('sPass2').value,k=keyOf(c);
+  m.className='msg err';
+  if(!name||!k){m.textContent='Please enter your name and contact.';return}
+  if(p.length<8){m.textContent='The password must be at least 8 characters.';return}
+  if(p!==p2){m.textContent='The passwords do not match.';return}
+  var us=users();
+  if(us[k]){m.textContent='An account with this contact already exists. Please sign in.';return}
+  var salt=Math.random().toString(36).slice(2,12)+Date.now().toString(36);
+  sha(salt+p).then(function(h){
+   us[k]={id:k,name:name,contact:c,salt:salt,h:h};
+   jset(LS,'ys_u',us);
+   var rem=$('remSignup')&&$('remSignup').checked;
+   (rem?LS:SS).setItem('ys_s',k);
+   if(rem)LS.setItem('ys_last',c);
+   location.href=nextPage();
+  });
+ });
+}
+
+/* service request */
+var rf=$('requestForm');
+if(rf){
+ var ru=me();
+ if(ru){$('rName').value=ru.name;$('rContact').value=ru.contact}
+ rf.addEventListener('submit',function(e){
+  e.preventDefault();
+  var m=$('rMsg');m.className='msg err';
+  var name=$('rName').value.trim(),ct=$('rContact').value.trim(),dl=$('rDeadline').value||'Not specified',det=$('rDetails').value.trim();
+  var via=(rf.querySelector('input[name=via]:checked')||{value:'wa'}).value;
+  if(!name||!ct||!det){m.textContent='Please complete your name, contact and details.';return}
+  m.textContent='';
+  var c=calc(),has=c.lines.length>0,id=uid('REQ');
+  if(has&&ru)saveOrder(orderFrom(id,'Request sent'));
+  send({type:'request',id:id,name:name,contact:ct,services:has?lineText(c):'Custom request',total:has?c.total:'',deadline:dl,details:det});
+  var txt=['Hello YS Scholaria, I would like to request services.','Reference: '+id,'Name: '+name,'Contact: '+ct,'Deadline: '+dl,has?'Services:\n'+lineText(c)+'\nTotal payable: '+fmt(c.total):'Service: custom request','Details: '+det].join('\n');
+  if(via==='mail')location.href='mailto:'+MAIL+'?subject='+encodeURIComponent('Service request '+id)+'&body='+encodeURIComponent(txt);
+  else window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(txt),'_blank','noopener');
+  var st=$('rStatus');st.hidden=false;
+  st.innerHTML='Your request '+esc(id)+' is ready to send. '+(has?'Next step: <a href="payments.html">pay the '+ADVPCT+'% advance ('+fmt(c.adv)+')</a> to confirm your order.':'We will reply with a quote.');
+ });
+}
+
+/* checkout: payment window on this page (invoice, method, your number, Proceed, merchant details, transaction ID) */
+var pm=$('payMethods');
+if(pm){
+ var qp=new URLSearchParams(location.search),oid=qp.get('order'),pu=me(),bal=null,cur=null,sender='';
+ if(oid&&pu)bal=ordersOf().filter(function(o){return o.id===oid})[0]||null;
+ var invoice=function(){
+  if(bal)return bal.id;
+  var v=SS.getItem('ys_inv');
+  if(!v){v='INV-'+today().replace(/-/g,'').slice(2)+'-'+Math.random().toString(36).slice(2,8).toUpperCase();SS.setItem('ys_inv',v)}
+  return v;
+ };
+ var dueNow=function(){if(bal)return paidType(bal,'Balance')?0:bal.bal;return calc().adv};
+ var canPay=function(){return bal?dueNow()>0:calc().lines.length>0};
+ var panel=$('payPanel');
+ if(bal){$('payHead').textContent='Pay the balance for order '+bal.id;$('paySummary').innerHTML=summaryHTML(bal)}
+ else{$('payHead').textContent='Pay the '+ADVPCT+'% advance to confirm your order';$('paySummary').setAttribute('data-order','1')}
+ var topBar=function(){
+  var c=bal?null:calc();
+  var right=bal?['Order total',fmt(bal.total)]:['Balance after delivery',fmt(c.bal)];
+  $('payTop').innerHTML='<div><small>Invoice No</small><b>'+esc(invoice())+'</b></div>'
+   +'<div><small>Total amount</small><b>'+fmt(dueNow())+'</b></div>'
+   +'<div><small>Charge</small><b>৳0</b></div>'
+   +'<div><small>'+right[0]+'</small><b>'+right[1]+'</b></div>';
+ };
+ var renderTiles=function(){
+  pm.innerHTML=PAY.map(function(m){return '<button type="button" class="mtile" data-id="'+esc(m.id)+'" aria-pressed="'+String(m.id===cur)+'"><img src="pay-'+esc(m.id)+'.png" alt="" onerror="this.remove()"><span>'+esc(m.name)+'</span><small>'+esc(m.sub)+'</small></button>'}).join('');
+ };
+ var showMethod=function(){
+  var m=PAY.filter(function(x){return x.id===cur})[0];
+  panel.hidden=false;
+  if(!canPay()){panel.innerHTML='<h3>Your order is empty</h3><p class="muted">Add services on the <a href="pricing.html">pricing page</a> to see the amount to pay.</p>';return}
+  if(!m){panel.hidden=true;return}
+  if(m.kind==='card'){
+   panel.innerHTML='<h3>RedotPay and card payments</h3><p>These are arranged privately while automatic checkout is being set up. Message us and we will send the payment details.</p>'
+    +'<a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/'+WA+'?text='+encodeURIComponent('Hello YS Scholaria, please send me the RedotPay payment details for '+fmt(dueNow())+' (invoice '+invoice()+').')+'">Request payment details</a>';
+   return;
+  }
+  var label=m.kind==='bank'?'Your account number':'Your '+m.name+' number';
+  panel.innerHTML='<h3>Pay with '+esc(m.name)+'</h3>'
+   +'<div class="field"><label for="payNum">'+esc(label)+'</label><input id="payNum" inputmode="numeric" autocomplete="off" value="'+esc(sender)+'"><span class="hint">The number you pay from. We use it to match your payment.</span></div>'
+   +'<p id="payMsg" class="msg" role="alert"></p>'
+   +'<div class="hero-actions"><button class="btn btn-primary" id="payProceed" type="button">Proceed</button><button class="btn btn-outline" id="payClose" type="button">Close</button></div>'
+   +'<p class="muted small" style="margin:14px 0 0">By clicking Proceed you agree to our <a href="terms.html">Terms and Conditions</a>.</p>';
+ };
+ var showSend=function(){
+  var m=PAY.filter(function(x){return x.id===cur})[0];
+  var h='<h3>Send the payment</h3><div class="due">Amount: <b>'+fmt(dueNow())+'</b> · Reference: <b>'+esc(invoice())+'</b></div>';
+  m.rows.forEach(function(r){h+='<div class="cpy"><span><small>'+esc(r[0])+'</small><br><code>'+esc(r[1])+'</code></span>'+(r[2]?'<button type="button" class="btn btn-outline btn-sm" data-copy="'+esc(r[2])+'">Copy</button>':'')+'</div>'});
+  h+='<ol class="vsteps">'+m.steps.map(function(s){return '<li>'+esc(s)+'</li>'}).join('')+'</ol>';
+  h+='<form class="trx" id="payForm" novalidate><div class="field"><label for="tTrx">Transaction ID (TrxID)</label><input id="tTrx" autocomplete="off" required><span class="hint">Letters and digits, as shown in your payment confirmation.</span></div>'
+   +'<p id="payMsg2" class="msg" role="alert"></p><div class="hero-actions"><button class="btn btn-primary" type="submit">I have paid, submit for verification</button><button class="btn btn-outline" id="payBack" type="button">Back</button></div></form>';
+  panel.innerHTML=h;
+ };
+ var renderAll=function(){topBar();renderTiles();if(cur)showMethod();else panel.hidden=true};
+ pm.addEventListener('click',function(e){
+  var b=e.target.closest?e.target.closest('.mtile'):null;if(!b)return;
+  cur=b.getAttribute('data-id');sender='';renderAll();
+  panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+ });
+ panel.addEventListener('click',function(e){
+  var t=e.target;
+  if(t.id==='payProceed'){
+   var m=PAY.filter(function(x){return x.id===cur})[0];
+   var v=$('payNum').value.replace(/[\s-]/g,'');
+   var ok=m.kind==='bank'?/^\d{6,}$/.test(v):/^01\d{9}$/.test(v);
+   if(!ok){$('payMsg').textContent=m.kind==='bank'?'Enter a valid account number (at least 6 digits).':'Enter a valid 11-digit number that starts with 01.';return}
+   sender=v;showSend();return;
+  }
+  if(t.id==='payClose'){cur=null;sender='';renderAll();return}
+  if(t.id==='payBack'){showMethod();return}
+ });
+ panel.addEventListener('submit',function(e){
+  if(!e.target||e.target.id!=='payForm')return;
+  e.preventDefault();
+  var m=PAY.filter(function(x){return x.id===cur})[0],msg=$('payMsg2');
+  var trx=$('tTrx').value.trim();
+  msg.className='msg err';
+  if(!/^[A-Za-z0-9]{6,}$/.test(trx)){msg.textContent='The transaction ID should be at least 6 letters or digits.';return}
+  var amt=dueNow(),c=calc(),type=bal?'Balance':'Advance',ref=invoice(),u=me();
+  var pay={type:type,amt:amt,m:m.name,from:sender,tx:trx,date:today(),st:'Pending verification'};
+  if(bal){var arr=ordersOf();arr.forEach(function(o){if(o.id===ref){o.pay=o.pay||[];o.pay.push(pay);o.status='Balance submitted'}});setOrders(arr);bal=arr.filter(function(o){return o.id===ref})[0]||bal}
+  else{var o=orderFrom(ref,'Advance submitted');o.pay=[pay];saveOrder(o);CART=[];saveCart();SS.removeItem('ys_inv')}
+  send({type:'order',mode:type.toLowerCase(),id:ref,name:u?u.name:'Guest',contact:u?u.contact:sender,services:bal?'Balance for '+ref:lineText(c),total:bal?bal.total:c.total,advance:bal?'':c.adv,balance:bal?'':c.bal,amount:amt,method:m.name,sender:sender,trx:trx});
+  var txt=['Hello YS Scholaria, I have paid and would like it verified.','Invoice No: '+ref,'Name: '+(u?u.name:'Guest'),'Payment: '+(bal?'balance after delivery':ADVPCT+'% advance'),'Amount paid: '+fmt(amt),'Method: '+m.name,'Sender: '+sender,'Transaction ID: '+trx,'I will attach the payment screenshot in this chat.'].join('\n');
+  window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(txt),'_blank','noopener');
+  cur=null;sender='';
+  panel.hidden=false;
+  panel.innerHTML='<h3>Payment submitted</h3><p>Your invoice number is <b>'+esc(ref)+'</b>. WhatsApp has opened so you can attach the screenshot. We verify payments manually and confirm on WhatsApp.</p>'
+   +(u?'<a class="btn btn-outline" href="dashboard.html#orders">Go to my orders</a>':'<p class="muted small">Keep this invoice number. Create an account to track future orders in a dashboard.</p><a class="btn btn-outline" href="login.html#signup">Create an account</a>');
+  topBar();renderTiles();paint();
+ });
+ renderAll();
+}
+
+/* review form */
+var rv=$('reviewForm');
+if(rv){
+ rv.addEventListener('submit',function(e){
+  e.preventDefault();
+  var m=$('vMsg');m.className='msg err';
+  var name=$('vName').value.trim(),svc=$('vSvc').value,stars=Number($('vStars').value)||5,text=$('vText').value.trim(),pub=$('vPub').checked;
+  if(!name||!text){m.textContent='Please enter your name and your review.';return}
+  if(BK){
+   send({type:'review',name:pub?name:'Client',service:svc,stars:stars,text:text,publish:pub?'Yes':'No',date:today()}).then(function(){m.className='msg ok';m.textContent='Thank you. Your review will appear after we check it.';rv.reset()});
+  }else{
+   var t=['Hello YS Scholaria, I would like to share my review.','Name: '+name,'Service: '+svc,'Rating: '+stars+' out of 5','Review: '+text,'Publish with my name: '+(pub?'Yes':'No, please keep it anonymous')].join('\n');
+   window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank','noopener');
+   m.className='msg ok';m.textContent='WhatsApp has opened with your review. Thank you.';
+  }
+ });
+}
+
+/* member dashboard */
+var dash=$('dashApp');
+if(dash){
+ var du=me();
+ if(!du){location.replace('login.html?next=dashboard.html')}
+ else{
+  var TABS=['overview','orders','payments','profile'];
+  var STAGES=['Request sent','Advance submitted','Advance confirmed','In progress','Delivered','Completed'];
+  var sIdx=function(s){var i=STAGES.indexOf(s);return i<0?1:i};
+  var dueOf=function(o){if(!paidType(o,'Advance'))return o.adv;if(statusOf(o)==='Delivered'&&!paidType(o,'Balance'))return o.bal;return 0};
+  var initials=function(n){return String(n).split(/\s+/).filter(Boolean).slice(0,2).map(function(w){return w.charAt(0)}).join('').toUpperCase()};
+  var CONTENT=$('dContent');
+  var fill=function(){$('dWho').textContent=du.name;$('dContact').textContent=du.contact;$('dAv').textContent=initials(du.name)};
+  fill();
+  var viewOverview=function(){
+   var os=ordersOf(),act=os.filter(function(o){return statusOf(o)!=='Completed'}).length,due=os.reduce(function(a,o){return a+dueOf(o)},0),done=os.length-act;
+   var next=os.filter(function(o){return dueOf(o)>0})[0];
+   var h='<h1>Welcome, '+esc(du.name.split(' ')[0])+'</h1><p class="muted">Track your orders and payments in one place.</p>';
+   h+='<div class="kpis"><div class="kpi"><small>Active orders</small><b>'+act+'</b></div><div class="kpi"><small>Amount due</small><b>'+fmt(due)+'</b></div><div class="kpi"><small>Completed</small><b>'+done+'</b></div></div>';
+   if(next){h+='<div class="band-dark" style="padding:24px"><div><h2 style="font-size:20px">Next step</h2><p>'+(paidType(next,'Advance')?'Pay the balance of '+fmt(next.bal)+' for order '+esc(next.id)+' after delivery.':'Pay the '+ADVPCT+'% advance ('+fmt(next.adv)+') to confirm order '+esc(next.id)+'.')+'</p></div><a class="btn btn-light" href="payments.html?order='+encodeURIComponent(next.id)+'">'+(paidType(next,'Advance')?'Pay balance':'Pay advance')+'</a></div>'}
+   else{h+='<div class="panel-card"><h3>'+(os.length?'You are all caught up':'Start your first order')+'</h3><p class="muted">'+(os.length?'No payment is due right now.':'Choose one or more services and confirm your order with a '+ADVPCT+'% advance.')+'</p><a class="btn btn-primary btn-sm" href="pricing.html">Choose services</a></div>'}
+   var ev=[];os.forEach(function(o){ev.push({d:o.date,t:'Order '+o.id+' placed'});(o.pay||[]).forEach(function(p){ev.push({d:p.date,t:p.type+' payment of '+fmt(p.amt)+' submitted via '+p.m})})});
+   ev.sort(function(a,b){return a.d<b.d?1:-1});
+   h+='<div class="panel-card"><h3>Recent activity</h3>'+(ev.length?ev.slice(0,6).map(function(x){return '<div class="pi"><span>'+esc(x.t)+'</span><small class="muted">'+esc(fdate(x.d))+'</small></div>'}).join(''):'<p class="muted" style="margin:0">No activity yet.</p>')+'</div>';
+   CONTENT.innerHTML=h;
+  };
+  var viewOrders=function(){
+   var os=ordersOf();
+   var h='<h1>Orders</h1><p class="muted">Each order shows its progress and the payments you have made.</p>';
+   if(!os.length)h+='<div class="panel-card"><p style="margin:0 0 12px">No orders yet.</p><a class="btn btn-primary btn-sm" href="pricing.html">Choose services</a></div>';
+   os.forEach(function(o){
+    var si=sIdx(statusOf(o)),due=dueOf(o);
+    var cls=statusOf(o)==='Completed'?'done':(due>0?'wait':'');
+    h+='<article class="ord"><div class="ord-head"><div><b>'+esc(o.id)+'</b><small>'+esc(fdate(o.date))+'</small></div><span class="status '+cls+'">'+esc(statusOf(o))+'</span></div>';
+    h+='<ol class="stepper">'+STAGES.map(function(s,i){return '<li class="'+(i<si?'done':(i===si?'cur':''))+'">'+esc(s)+'</li>'}).join('')+'</ol>';
+    h+='<ul class="ord-lines">'+o.items.map(function(i){return '<li><span>'+esc(i.n)+' · '+esc(i.p)+(i.u?' · urgent':'')+'</span><b>'+fmt(i.f)+'</b></li>'}).join('')+'</ul>';
+    h+='<div class="ord-tot"><div><small>Total payable</small><b>'+fmt(o.total)+'</b></div><div><small>Advance ('+ADVPCT+'%)</small><b>'+fmt(o.adv)+'</b></div><div><small>Balance after delivery</small><b>'+fmt(o.bal)+'</b></div></div>';
+    h+='<div class="ord-act">'+(due>0?'<a class="btn btn-primary btn-sm" href="payments.html?order='+encodeURIComponent(o.id)+'">'+(paidType(o,'Advance')?'Pay balance':'Pay advance')+' '+fmt(due)+'</a>':'')+'<a class="btn btn-outline btn-sm" target="_blank" rel="noopener" href="https://wa.me/'+WA+'?text='+encodeURIComponent('Hello YS Scholaria, I need an update on order '+o.id)+'">Ask on WhatsApp</a></div></article>';
+   });
+   CONTENT.innerHTML=h;
+  };
+  var viewPayments=function(){
+   var ps=[];ordersOf().forEach(function(o){(o.pay||[]).forEach(function(p){ps.push({o:o,p:p})})});
+   ps.sort(function(a,b){return a.p.date<b.p.date?1:-1});
+   var paid=ps.reduce(function(a,x){return a+(Number(x.p.amt)||0)},0);
+   var due=ordersOf().reduce(function(a,o){return a+dueOf(o)},0);
+   CONTENT.innerHTML='<h1>Payments</h1><div class="kpis" style="grid-template-columns:1fr 1fr"><div class="kpi"><small>Submitted so far</small><b>'+fmt(paid)+'</b></div><div class="kpi"><small>Amount due</small><b>'+fmt(due)+'</b></div></div><div class="panel-card"><h3>Payment history</h3>'+(ps.length?ps.map(function(x){return '<div class="pi"><div><b>'+esc(x.p.type)+' · '+fmt(x.p.amt)+'</b><small class="muted" style="display:block">'+esc(x.p.m)+' · TrxID '+esc(x.p.tx)+' · '+esc(x.o.id)+'</small></div><div style="text-align:right"><span class="status wait">'+esc(x.p.st)+'</span><small class="muted" style="display:block">'+esc(fdate(x.p.date))+'</small></div></div>'}).join(''):'<p class="muted" style="margin:0">No payments yet. They appear here after you submit a transaction ID.</p>')+'</div><p class="muted small">Payments are verified manually. We confirm on WhatsApp.</p>';
+  };
+  var viewProfile=function(){
+   CONTENT.innerHTML='<h1>Profile</h1><div class="panel-card"><form id="profForm" class="form"><div class="field"><label for="pfName">Full name</label><input id="pfName" value="'+esc(du.name)+'" required></div><div class="field"><label for="pfContact">Email or WhatsApp number</label><input id="pfContact" value="'+esc(du.contact)+'" readonly></div><p id="pfMsg" class="msg ok" role="status"></p><div><button class="btn btn-primary" type="submit">Update profile</button></div></form></div><div class="panel-card"><h3>Account</h3><p class="muted">Your account and orders are kept in this browser on this device.</p><div class="ord-act"><button class="btn btn-outline" id="clearData" type="button">Clear my orders on this device</button></div></div>';
+   $('profForm').addEventListener('submit',function(e){e.preventDefault();var n=$('pfName').value.trim();if(!n)return;var us=users();if(us[du.id]){us[du.id].name=n;jset(LS,'ys_u',us)}du.name=n;fill();$('pfMsg').textContent='Profile updated.'});
+   $('clearData').addEventListener('click',function(){if(window.confirm('Remove all orders saved on this device?')){LS.removeItem('ys_o_'+du.id);show('overview')}});
+  };
+  var notes=function(){var n=[];ordersOf().forEach(function(o){var d=dueOf(o);if(d>0)n.push({t:(paidType(o,'Advance')?'Pay the balance of ':'Pay the advance of ')+fmt(d),s:'Order '+o.id,h:'payments.html?order='+encodeURIComponent(o.id)});if(statusOf(o)==='Delivered')n.push({t:'Your order has been delivered',s:'Order '+o.id,h:'#orders'})});return n};
+  var renderBell=function(){var n=notes(),dot=$('bdot');dot.hidden=!n.length;dot.textContent=n.length;$('npanel').innerHTML=n.length?n.map(function(x){return '<a class="nit" href="'+x.h+'">'+esc(x.t)+'<small>'+esc(x.s)+'</small></a>'}).join(''):'<p class="muted" style="padding:10px 12px;margin:0">You are all caught up.</p>'};
+  var show=function(t){
+   if(TABS.indexOf(t)<0)t='overview';
+   qa('[data-tab]',dash).forEach(function(b){b.classList.toggle('on',b.getAttribute('data-tab')===t)});
+   ({overview:viewOverview,orders:viewOrders,payments:viewPayments,profile:viewProfile})[t]();
+   try{history.replaceState(null,'','#'+t)}catch(e){}
+   renderBell();
+  };
+  qa('[data-tab]',dash).forEach(function(b){b.addEventListener('click',function(){show(b.getAttribute('data-tab'))})});
+  $('dLogout').addEventListener('click',logout);
+  $('bell').addEventListener('click',function(e){e.stopPropagation();var p=$('npanel');p.hidden=!p.hidden;$('bell').setAttribute('aria-expanded',String(!p.hidden))});
+  $('npanel').addEventListener('click',function(e){var a=e.target.closest?e.target.closest('a'):null;if(a&&a.getAttribute('href')==='#orders'){e.preventDefault();$('npanel').hidden=true;show('orders')}});
+  document.addEventListener('click',function(e){var p=$('npanel');if(!p.hidden&&!p.contains(e.target)&&!$('bell').contains(e.target))p.hidden=true});
+  window.addEventListener('hashchange',function(){var h=location.hash.slice(1);if(TABS.indexOf(h)>=0)show(h)});
+  show(TABS.indexOf(location.hash.slice(1))>=0?location.hash.slice(1):'overview');
+ }
+}
+
+/* services accordion in the mobile menu */
+qa('.acc-btn').forEach(function(b){b.addEventListener('click',function(){var p=document.getElementById(b.getAttribute('aria-controls')),o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(o));if(p)p.hidden=!o})});
+
+/* start */
+if(me())qa('.btn-signin').forEach(function(a){a.textContent='My account';a.setAttribute('href','dashboard.html')});
+if(BK&&!SS.getItem('ys_seen')){SS.setItem('ys_seen','1');send({type:'view',page:location.pathname||'/'})}
+loadStats();
+loadReviews();
+paint();
+})();
+</script></body></html>

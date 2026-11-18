@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard.html
+Disallow: /login.html
+Disallow: /payments.html
+Disallow: /404.html
+
+Sitemap: https://ysscholaria.com/sitemap.xml

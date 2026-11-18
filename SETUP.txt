@@ -1,0 +1,52 @@
+YS SCHOLARIA - LIVE COUNTERS, REQUESTS, ORDERS AND REVIEWS
+One-time setup, about 10 minutes. Everything is stored in a Google Sheet that you own.
+
+WHAT THIS GIVES YOU
+- Website visitors and work requests are counted automatically and shown on the home page.
+- Every service request and checkout payment is logged in your sheet.
+- Clients see their order status on their dashboard. You update it in the sheet.
+- Reviews are shown automatically, five-star reviews first, once you approve them.
+
+STEP 1 - CREATE THE SHEET
+1. Go to sheets.new and name the file "YS Scholaria data".
+2. Rename the first tab to: Stats
+   Type these exactly:
+     A1: views        B1: 0
+     A2: requests     B2: 0
+3. Add a tab named: Requests
+   Row 1 headers: When | Reference | Name | Contact | Services | Total | Deadline | Details
+4. Add a tab named: Orders
+   Row 1 headers: When | Reference | Mode | Name | Contact | Services | Total | Advance | Balance | Amount paid | Method | Sender | TrxID | Status
+5. Add a tab named: Reviews
+   Row 1 headers: Date | Name | Service | Stars | Review | Approved
+
+STEP 2 - ADD THE SCRIPT
+1. In the sheet, open Extensions > Apps Script.
+2. Delete any code in the editor and paste the whole of Code.gs.
+3. Click the save icon.
+
+STEP 3 - PUBLISH IT AS A WEB APP
+1. Click Deploy > New deployment.
+2. Choose the type "Web app".
+3. Execute as: Me.   Who has access: Anyone.
+4. Click Deploy, then Authorise access and allow the requested permissions.
+5. Copy the Web app URL. It ends with /exec.
+
+STEP 4 - CONNECT THE WEBSITE
+1. Open config.js (it is in the same folder as this guide) in a text editor.
+2. Paste the URL between the quotes:  window.YS_CONFIG = { backend: "PASTE_URL_HERE" };
+3. Save the file and upload it to your hosting again, replacing the old config.js.
+
+TEST IT
+Open the Web app URL in a browser. You should see:  {"views":0,"requests":0}
+
+DAILY USE
+- Approving a review: in the Reviews tab, type Yes in the Approved column. It appears on the site, sorted by stars.
+- Confirming a payment: check the TrxID in your bank or wallet app, then update the Status column (N) of that order in the Orders tab. Use one of: Advance confirmed, In progress, Delivered, Completed. Clients see the change on their dashboard the next time they open it.
+- Reviews can also be added directly in config.js (window.YS_REVIEWS) if you prefer not to use the sheet.
+
+IMPORTANT NOTES
+- After you edit Code.gs later, choose Deploy > Manage deployments > Edit > New version. Otherwise the old code keeps running.
+- Counters go up once for each visitor tab session, and requests or orders go up when they are submitted.
+- "Anyone" can send data to the URL. This is normal for a small site, but do not put information in the sheet that you would not keep in a spreadsheet, and keep the sheet shared only with yourself.
+- Without this setup the site still works. The visitor and request counters stay hidden, and reviews come only from config.js.
